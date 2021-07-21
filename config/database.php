@@ -62,6 +62,17 @@ return [
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
         ],
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'host' => env('DBM_HOST', 'localhost'),
+            'port' => env('DBM_PORT', 27017),
+            'database' => env('DBM_DATABASE'),
+            'username' => env('DBM_USERNAME'),
+            'password' => env('DBM_PASSWORD'),
+            'options' => [
+                'database' => 'styde' // sets the authentication database required by mongo 3
+            ]
+        ],
 
         'pgsql' => [
             'driver' => 'pgsql',

@@ -1,0 +1,6 @@
+instalar mongoDB 
+https://styde.net/como-usar-mongodb-en-laravel/
+
+instalar JWT
+https://platzi.com/tutoriales/1467-curso-php-laravel/7629-api-rest-en-laravel-8-con-autenticacion-jwt/
+
