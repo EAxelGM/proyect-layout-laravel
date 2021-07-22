@@ -30,6 +30,7 @@ class User extends Eloquent implements Authenticatable, JWT{
     protected $fillable = [
         'name',
         'lastname',
+        'image',
         'email',
         'password',
     ];

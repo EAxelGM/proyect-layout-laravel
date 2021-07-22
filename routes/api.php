@@ -33,6 +33,9 @@ Route::post('verify-recuperar-password', [RecuperarPassword::class, 'verifyCode'
 
 Route::post('profile/change-password', [User::class, 'changePassword']);
 
+
+Route::resource('user', User::class);
+Route::post('user-modificar-imagen', [User::class, 'actualizarImagen']);
 /* Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 }); */
