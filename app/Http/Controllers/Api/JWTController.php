@@ -18,10 +18,10 @@ class JWTController extends Controller
         $credentials = $request->only('email', 'password');
         try {
             if (! $token = JWTAuth::attempt($credentials)) {
-                return response()->json(['error' => 'Credenciales incorrectas'], 400);
+                return response()->json(['message' => 'Credenciales incorrectas'], 400);
             }
         } catch (JWTException $e) {
-            return response()->json(['error' => 'el token no se pudo haber creado...'], 500);
+            return response()->json(['message' => 'el token no se pudo haber creado...'], 500);
         }
         return response()->json(compact('token'));
     }
@@ -53,11 +53,12 @@ class JWTController extends Controller
         ]);
 
         if($validator->fails()){
-            return response()->json($validator->errors()->toJson(), 400);
+            return response()->json($validator->errors(), 400);
         }
 
         $user = User::create([
             'name' => $request->get('name'),
+            'lastname' => $request->get('lastname'),
             'email' => $request->get('email'),
             'password' => Hash::make($request->get('password')),
         ]);
