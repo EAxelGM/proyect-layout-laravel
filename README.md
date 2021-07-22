@@ -33,4 +33,4 @@ $ php artisan serve
 
 ```
 
-## No olvides igual clonar el fron-end <a href="https://github.com/EAxelGM/proyect-layout-nuxtjs" target="_blank">front-end</a>
+## No olvides igual clonar el <a href="https://github.com/EAxelGM/proyect-layout-nuxtjs" target="_blank">front-end</a>
