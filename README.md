@@ -11,6 +11,7 @@ $ git clone https://github.com/EAxelGM/proyect-layout-laravel.git
 $ git remote remove origin
 
 # agrega el proyecto a tu git (para esto debes tener ya un repositorio creado)
+$ git init
 $ git remote add origin (URL DE TU REPOSITORIO)
 $ git add .
 $ git commit -m "copy"
